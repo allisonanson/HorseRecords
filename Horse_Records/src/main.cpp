@@ -4,7 +4,7 @@ int main()
 {
     // file declaration and opening
     std::ofstream fout;
-    fout.open ("info.csv");
+    fout.open ("info.csv", std::ios::app);
 
     // quits program if file doesn't exist
     if (!fout) {
