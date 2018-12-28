@@ -38,7 +38,7 @@ class Horse
     int getWeight();
 
     // input information functions
-    std::string inputName();
+    void inputName();
 
     // other functions
     int calculateAge(int birth_year, int current_year);
