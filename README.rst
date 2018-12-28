@@ -23,11 +23,11 @@ MainMenu
     default case asks user to try again 
 
     case:
-        exit   - breaks application loop leaving the program
-        add    - runs SaveHorseInfo utility
-        change - runs ChangeHorseInfo utility
-        remove - runs RemoveHorseInfo utility
-        search - runs SearcHorseInfo utility
+        - exit   -  breaks application loop leaving the program
+        - add    - runs SaveHorseInfo utility
+        - change - runs ChangeHorseInfo utility
+        - remove - runs RemoveHorseInfo utility
+        - search - runs SearcHorseInfo utility
 
 SaveHorseInfo:
     - open info.csv
