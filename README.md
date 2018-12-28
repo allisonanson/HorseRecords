@@ -29,12 +29,12 @@ MainMenu
         remove - runs RemoveHorseInfo utility
         search - runs SearcHorseInfo utility
 
-SaveHorseInfo
-    open info.csv
-    create horse obj
-    save horse info provided by user in horse obj
-    save horse obj info to info.csv
-    close info.csv
+SaveHorseInfo:
+    - open info.csv
+    - create horse obj
+    - save horse info provided by user in horse obj
+    - save horse obj info to info.csv
+    - close info.csv
 
 
 ChangeHorseInfo
