@@ -1,11 +1,15 @@
 # HorseRecords
 
-Program was made to store horse information. 
-It's written to a .csv file through the main function 
+Program stores horse information. 
+Horse info written to a .csv file 
 (the output file is not fed through any other functions yet).
 
-The program opens the output file, checks to see if the output file
-is present, and terminates if it's not there. Then the program uses
-the inputName function to get the name of a horse from the user. It 
-writes the new name to the output file and then prints to the screen
-that the info has been written.
+The program opens the csv file, and terminates if it's not there.
+program gets horse name from user and writes it to the csv.
+tells user info placed in to the csv.
+
+InputName function gets name of horse from user and is stored in a horse object
+
+
+
+
