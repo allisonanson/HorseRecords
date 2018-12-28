@@ -2,6 +2,7 @@
 FILES 	= $(wildcard src/*.cpp) $(wildcard lib/*.cpp)
 OBJS	= $(FILES:.cpp=.o)
 TARGET 	= records
+INFO    = info.txt info.csv
 
 ifeq ($(OS), Windows_NT)
 	EXT = .exe
@@ -45,5 +46,5 @@ run:	$(TARGET)$(EXT)
 
 .PHONY: clean
 clean:
-	$(RM) $(TARGET)$(EXT) $(DOBJS)
+	$(RM) $(TARGET)$(EXT) $(DOBJS) $(INFO)
 
