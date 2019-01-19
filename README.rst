@@ -5,9 +5,9 @@ Horse info written to a .csv file
 (the output file is not fed through any other functions yet).
 
 Program utilities are:
-    save horse info
-    change horse info
-    remove horse info 
+    add new horse info
+    change existing horse info
+    remove existing horse and info 
     search horse info
 
 Utilites are accessed through main menu.
@@ -23,7 +23,7 @@ MainMenu
     default case asks user to try again 
 
     case:
-        - exit   -  breaks application loop leaving the program
+        - quit   -  breaks application loop leaving the program
         - add    - runs SaveHorseInfo utility
         - change - runs ChangeHorseInfo utility
         - remove - runs RemoveHorseInfo utility
