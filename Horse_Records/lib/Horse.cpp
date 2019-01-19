@@ -70,15 +70,13 @@ int Horse::getWeight() {
 }
 
 //////////////////// INPUTS ////////////////////
-void Horse::inputName() 
+std::string Horse::inputName() 
 {
     std::string name;
 
     std::cout << "Enter the horse's name:  ";
     std::cin >> name;
-
-    this->setName(name);
-    std::cout << "Name set! \n";
+    return name;
 }
 
 //////////////////// OTHERS //////////////////// 
