@@ -1,3 +1,5 @@
+/*  Horse.cpp  */
+
 #include "Horse.h"
 
 Horse::Horse()  // constructor 
@@ -86,4 +88,10 @@ int Horse::calculateAge(int birth_year, int current_year)
     age = current_year - birth_year;
 
     return age;
+}
+
+std::string Horse::toLower(std::string word) {
+// Takes a string argument and transforms it into all lowercase equivalents of itself, then returns it. 
+    std::transform(word.begin(), word.end(), word.begin(), ::tolower);
+    return word;
 }

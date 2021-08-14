@@ -1,8 +1,9 @@
+/*  Horse.h  */
+
 #pragma once        // stops duplicate pasting of includes to main
 
 #include<iostream>
 #include<string>
-#include<fstream>   //file input/output
 
 class Horse
 {
@@ -42,5 +43,5 @@ class Horse
 
     // other functions
     int calculateAge(int birth_year, int current_year);
-
+    std::string toLower(std::string word);
 };
