@@ -1,17 +1,17 @@
 /*  main.cpp  */
 
+BREAK
+
 #include "Horse.h"
 #include "BinaryTree.h"
 
-void printMainMenu(); 
 
 
-int main()
 {
 
     BinaryTree binaryTree;
     
-    Horse* horse1 = new Horse();
+                Horse* horse1 = new Horse();
     horse1->setName("Billy");
 
     Horse* horse2 = new Horse();
