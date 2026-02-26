@@ -6,7 +6,6 @@ BREAK
 #include "BinaryTree.h"
 
 
-
 {
 
     BinaryTree binaryTree;
@@ -29,49 +28,67 @@ BREAK
     binaryTree.searchTree(horse2);
 
     /////////////// MENU ///////////////
-    int choice = 0;
+    std::string choice = "";
 
     do {
-        printMainMenu();
+        std::cout << "\n\n***** MENU ***** \n\n"
+                  << " \"add\" - Add a New Horse \n"
+                  << " \"change\" - Change a Current Horse \n"
+                  << " \"remove\" - Remove a Current Horse \n"
+                  << " \"search\" - Search Current Horses \n"
+                  << " \"quit\" - Quit Program \n\n\n"
+                  << "Please enter a menu option:\t";
         std::cin >> choice;
         
-        if (choice == 1) {
+        if (choice == "add" || choice == "ADD") {
             // FUNCTION TO ADD HORSE OBJECT
         }
-        else if (choice == 2) {
+        else if (choice == "change" || choice =="CHANGE") {
             // FUNCTION TO CHANGE HORSE OBJECT
         }
-        else if (choice == 3) {
+        else if (choice == "remove" || choice == "REMOVE") {
             // FUNCTION TO REMOVE HORSE OBJECT
         }
-        else if (choice == 4) {
+        else if (choice == "search" || choice == "SEARCH") {
             // FUNCTION TO SEARCH HORSE OBJECTS
         }
-        else if (choice == 5) {
+        else if (choice == "quit" || choice == "QUIT") {
             std::cout << "\n\n ***** TERMINATING PROGRAM ***** \n\n\n";
+            return 1;
         }
         else {
-            std::cin.clear();
-            std::cin.ignore();
-            choice = 0;
+            continue;
         }
 
     }
-    while (choice != 5);
+    while (choice != "quit");
+    
+    /////////////////////////////////////////
+
+    /*
+
+    // file declaration and opening
+    std::ofstream fout;
+    fout.open ("info.csv", std::ios::app);
+
+    // quits program if file doesn't exist
+    if (!fout) {
+        std::cout<< "\n\n* * * * * Program Terminated * * * * *"
+                 << "\nFile failed to open.\n\n";
+
+        return 1;
+    }
+
+    Horse horse1;
+    
+    horse1.setName(horse1.inputName());
+    fout << "\n------------ \nName: " << horse1.getName() << std::endl;
+    
+    std::cout << "Horse " << horse1.getName() << " was written to the file. \n\n";
+
+    fout.close();    // close output file
+
+    */
 
     return 0;
-}
-
-
-void printMainMenu() {
-    std::cout << "• • • • • • • • • • • •\n"
-              << "•         MENU        •\n"
-              << "• • • • • • • • • • • •\n"
-              << "•  1. Add Horse       •\n"
-              << "•  2. Change Horse    •\n"
-              << "•  3. Remove Horse    •\n"
-              << "•  4. Search Horses   •\n"
-              << "•  5. Quit            •\n"
-              << "• • • • • • • • • • • •\n"
-              << "Choose an option...  ";
 }
