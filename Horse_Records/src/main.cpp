@@ -9,6 +9,7 @@ BREAK
 
 {
 
+    // CHANGE 2 
     BinaryTree binaryTree;
     
                 Horse* horse1 = new Horse();
@@ -18,7 +19,6 @@ BREAK
     horse2->setName("Tom");
 
     Horse* horse3 = new Horse();
-    horse3->setName("Write");
 
     binaryTree.addNode(horse2);
     binaryTree.addNode(horse3);
